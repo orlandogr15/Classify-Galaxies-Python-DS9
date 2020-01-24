@@ -49,9 +49,9 @@ lim_mag: Magnitude limit for galaxies in catalog (default = 17).
 
 lim_flag: SExtractor flag limit (star = 1, galaxy = 0, default = 0.6).
 
-catalog size limit: The dataframe axis may be changed for testing purposes.
+catalog size limit: The dataframe axis may be changed for testing purposes. It must be commented/removed to use all galaxies possible.
 
-home_dir: Option to change image/catalog directory.
+home_dir: Option to change image/catalog directory. 
 
 min_area: Minimum area in pixels for galaxy images (default = 60).
 
