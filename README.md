@@ -10,34 +10,6 @@ The images and tables created are not deleted after the tool is closed.
 ## Usage
 python CGPD.py [image.fits] [catalog]
 
-## Some variables
-
-lim_mag: Magnitude limit for galaxies in catalog (default = 17).
-
-lim_flag: SExtractor flag limit (star = 1, galaxy = 0, default = 0.6).
-
-catalog size limit: The dataframe axis may be changed for testing purposes.
-
-home_dir: Option to change image/catalog directory.
-
-min_area: Minimum area in pixels for galaxy images (default = 60).
-
-coords_table: Name of dataframe that includes image name, pixel and RA/Dec coordinates.
-
-file_out: Name of final table with classifications for each galaxy included.
-
-d.set's: DS9 commands used to help analyze each galaxy.
-
-## Some functions
-
-GetSize: Gets galaxy box dimensions, used to create a new FITS image of cropped galaxy.
-
-GetPng: Creates a PNG image of the galaxy, displaying it in DS9 fashion with FK5 coordinates. Using it makes the process slower and can be disabled.
-
-GetFits: Creates cropped image of galaxy using GetSize outputs.
-
-GetAxis: Gets axis of image's header.
-
 ## SExtractor catalog requirements
 In the same order, without headers:
 
@@ -70,3 +42,32 @@ In the same order, without headers:
 \#  14 CLASS_STAR -             S/G classifier output
 
 \#  15 FLAGS -                  Extraction flags
+
+## Some variables
+
+lim_mag: Magnitude limit for galaxies in catalog (default = 17).
+
+lim_flag: SExtractor flag limit (star = 1, galaxy = 0, default = 0.6).
+
+catalog size limit: The dataframe axis may be changed for testing purposes.
+
+home_dir: Option to change image/catalog directory.
+
+min_area: Minimum area in pixels for galaxy images (default = 60).
+
+coords_table: Name of dataframe that includes image name, pixel and RA/Dec coordinates.
+
+file_out: Name of final table with classifications for each galaxy included.
+
+d.set's: DS9 commands used to help analyze each galaxy.
+
+## Some functions
+
+GetSize: Gets galaxy box dimensions, used to create a new FITS image of cropped galaxy.
+
+GetPng: Creates a PNG image of the galaxy, displaying it in DS9 fashion with FK5 coordinates. Using it makes the process slower and can be disabled.
+
+GetFits: Creates cropped image of galaxy using GetSize outputs.
+
+GetAxis: Gets axis of image's header.
+
