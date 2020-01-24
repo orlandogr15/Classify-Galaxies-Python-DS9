@@ -68,6 +68,3 @@ GetSize: Gets galaxy box dimensions, used to create a new FITS image of cropped 
 GetPng: Creates a PNG image of the galaxy, displaying it in DS9 fashion with FK5 coordinates. Using it makes the process slower and can be disabled.
 
 GetFits: Creates cropped image of galaxy using GetSize outputs.
-
-GetAxis: Gets axis of image's header.
-
