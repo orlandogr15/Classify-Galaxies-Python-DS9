@@ -1,9 +1,9 @@
 # Classify Galaxies with Python and DS9
-A Python GUI tool to classify galaxies with the help of DS9.
+A Python GUI tool to classify galaxies with the help of DS9 and SExctrator.
 
-This script uses a FITS image and its SExtractor catalog to create cropped images of each galaxy, in order to display them in DS9. DS9 allows the user analyze each galaxy in better detail and classify it correctly. Tkinter is used to have a GUI that displays each possible classification, with an option to quit when requested. 
+This script uses a FITS image and its SExtractor catalog to create cropped images of each galaxy in order to display them in DS9. DS9 allows the user analyze each galaxy in better detail and classify it correctly. Tkinter is used to have a GUI that displays each possible classification, with an option to quit when requested. 
 
-The classification data will only be saved in a new file once all images are classified. More classification options can be added easily to the GUI, but may be cumbersome to do so. Some variables (listed below) may be changed within the code to adjust to different needs, e.g, image/catalog destination, file names.
+The classification data will only be saved in a new file once all images are classified. More classification options can be added easily to the GUI, but may be cumbersome to do so. Some variables (listed below) may be changed within the code to adjust to different needs, e.g. image/catalog destination, file names.
 
 The images and tables created are not deleted after the tool is closed.
 
